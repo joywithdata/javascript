@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
+        <script>
             
-        </style>
+        </script>
     </head>
     <body>
-        <!-- <h1 style="border:1px solid red;background-color: green;">WEB</h1> -->
+        <!-- <h1 style="border:5px solid blue;background-color:green;">WEB</h1> -->
         <input type="button" value="day" onclick="
-            document.querySelector('body').style.backgroundColor='white';
-            document.querySelector('body').style.color='black';
+            var bodyTag = document.querySelector('h1');
+            bodyTag.style.backgroundColor='white';
+            bodyTag.style.color='black';
             document.querySelector('#a1').style.color='black';
             document.querySelector('#a2').style.color='black';
             document.querySelector('#a3').style.color='black';
         ">
         <input type="button" value="night" onclick="
-            document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body').style.color='white';
+            var bodyTag = document.querySelector('h1');
+            bodyTag.style.backgroundColor='black';
+            bodyTag.style.color='white';
             document.querySelector('#a1').style.color='white';
             document.querySelector('#a2').style.color='white';
             document.querySelector('#a3').style.color='white';
         ">
-         <h1>WEB</h1>
+        <h1>WEB</h1>
         <ol>
-            <li><a href="1.html">html</a></li>
-            <li><a href="2.css">css</a></li>
-            <li><a href="3.js">js</a></li>
+            <li><a href="1.html" id="a1">html</a></li>
+            <li><a href="2.html" id="a2">css</a></li>
+            <li><a href="3.html" id="a3">js</a></li>
         </ol>
+        WEB is Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quam ipsam dolor nesciunt, dolore non culpa in fuga excepturi consectetur eaque aperiam tempore, illo consequuntur magni ratione sit facilis impedit!
     </body>
 </html>
