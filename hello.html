@@ -2,26 +2,30 @@
 <html>
     <head>
         <style>
-            h1{
-                border:5px solid blue;
-                background-color:green;
-            }
+            
         </style>
     </head>
-    <body style="background-color: black;">
+    <body>
         <!-- <h1 style="border:1px solid red;background-color: green;">WEB</h1> -->
         <input type="button" value="day" onclick="
             document.querySelector('body').style.backgroundColor='white';
             document.querySelector('body').style.color='black';
+            document.querySelector('#a1').style.color='black';
+            document.querySelector('#a2').style.color='black';
+            document.querySelector('#a3').style.color='black';
         ">
         <input type="button" value="night" onclick="
             document.querySelector('body').style.backgroundColor='black';
             document.querySelector('body').style.color='white';
+            document.querySelector('#a1').style.color='white';
+            document.querySelector('#a2').style.color='white';
+            document.querySelector('#a3').style.color='white';
         ">
+         <h1>WEB</h1>
         <ol>
-            <li>html</li>
-            <li>css</li>
-            <li>js</li>
+            <li><a href="1.html">html</a></li>
+            <li><a href="2.css">css</a></li>
+            <li><a href="3.js">js</a></li>
         </ol>
     </body>
 </html>
